@@ -1,0 +1,1051 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+    /*margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */*/
+}
+body, html {
+  height: 100%;
+}
+.splash {
+  position: absolute;
+  z-index:999;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background: url("img/logo.png") center no-repeat #fff;
+}
+
+a {
+  color: #000;
+}
+a:hover, a:focus {
+  color: #013664;
+}
+th {
+  font-weight: normal;
+}
+.inactive, .inactive:hover {
+  color: #ababab;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1em;
+}
+.hidden { /*for screen reader/SEO only*/
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 10000;
+}
+.pp-logo {
+position: fixed;
+width: 80px;
+z-index: 1000;
+top: 20px;
+left: 20px;
+}
+/***********
+SIDEBAR
+************/
+.btn-dark {
+    border-radius: 0;
+    color: #000;
+    background-color: transparent;
+}
+.btn-light {
+    border-radius: 0;
+    color: #fff;
+    background-color: none;
+}
+.btn-light:hover {
+  color: #fff;
+}
+
+.btn-dark:focus, .btn-light:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #131516;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav p {
+  color: #fff;
+
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 25px;
+
+}
+
+.top-item {
+  padding-top: 30px;
+}
+
+.sidebar-nav li a, .sidebar-nav li {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.blurb {
+  text-indent: 0;
+  padding: 20px;
+}
+.sidebar-nav i {
+  text-indent: 0;
+}
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 26px;
+}
+
+#menu-toggle, #menu-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 20px 26px;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/***********
+GRID
+************/
+.grid {
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+}
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item {
+  width: 232px;
+  height: 232px;
+  float: left;
+  margin-bottom: 14px;
+  overflow: hidden;
+  border: 1px solid #000;
+  transition: opacity .5s ease-in-out;
+  text-align: center;
+  max-width: 100%;
+}
+
+.grid-item:hover {
+  opacity: 0.6;
+}
+
+.grid-item--width2 {
+   width: 478px;
+
+ }
+.grid-item--height2 {
+  height: 478px;
+}
+
+
+.grid h2 {
+  font-size: 1em;
+  padding-left: 1em;
+  position: absolute;
+  z-index: 10;
+}
+.reverse-title {
+  color: #eee;
+}
+.grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/**** Cover Page Photos ******/
+
+.form3-cover {
+  height: auto;
+  width: 478px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.selkirk-cover {
+  width: 276px;
+  height: auto; /*191px*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+.nowthen-cover {
+  height: 232px;
+  width: auto;
+
+}
+.regular-cover {
+  width: 232px;
+  height: auto;
+}
+.chair-cover{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.spa-cover {
+  width: 232px;
+  height: auto;
+  position: absolute;
+  top: 42px;
+  left: 0;
+}
+
+.chocolatea-cover {
+  height: auto;
+  width: 478px;
+  position: absolute;
+  top: 69px;
+  left: 0;
+}
+
+.solus-cover {
+  height: auto;
+  width: 232px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+.cardboard-cover {
+  width: 232px;
+  height: auto;
+  position: absolute;
+  top: 69px;
+  left: 0;
+}
+.trailer-cover {
+  width: 232px;
+  height: auto;
+  position: absolute;
+  top: 63px;
+  left:0;
+
+}
+
+/***********
+FOOTER
+*************/
+footer {
+  color: #ababab;
+  font-weight: lighter;
+  font-size: .777em;
+
+}
+footer .container .row {
+  margin: 0 1em 15px;
+}
+footer a {
+  color: #ababab;
+  font-weight: lighter;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer ul li  {
+  display: inline-block;
+  width: 150px;
+}
+.info li{
+  display: block;
+  text-align: right;
+}
+
+
+/*************
+PROJECT PAGES
+*************/
+.project-page {
+  padding:60px 0;
+}
+.project-page h2 {
+  
+  margin:0;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.project-page h3 {
+  display: block;
+  padding-right: 20px;
+  text-align: center;
+}
+.row-left h3{
+  text-align: left;
+}
+.project-page .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-xs-6 {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+
+.project-page p {
+  font-size: 1.333em;
+  color: #ababab; /*light grey*/
+  font-weight: lighter;
+  line-height: 1.4;
+}
+.caption {
+  text-align: left;
+}
+
+.bubble, .hotel-bubble, .furniture-technical {
+  text-align: center;
+}
+.bubble img{
+  height: auto;
+  width: 382px;
+}
+
+.project-img {
+  height: auto;
+  width: 770px;
+  display: block;
+  margin: 60px auto 30px;
+}
+.materials-row {
+  text-align: center;
+}
+.materials {
+  height: auto;
+  width: 80px;
+  font-size: 0.777em;
+  vertical-align: top;
+  margin-right: 15px;
+  display:inline-block;
+}
+
+.materials img {
+  height: auto;
+  width: 80px;
+  display: inline-block;
+}
+
+.project-img-vert {
+  margin: 60px auto 0;
+  width: 600px;
+  height: auto;
+}
+
+.project-img-renders{
+  width: 600px;
+  height: auto;
+  display: block;
+  margin-top: 80px;
+}
+.project-img-overlay-1 {
+  height: auto;
+  width: 161px;
+  display: block;
+  margin: 80px 0 5%;
+}
+.project-img-overlay-2 {
+  height: auto;
+  width: 161px;
+  display: block;
+  margin: 0;
+}
+/*******Form3********/
+
+.block-plans {
+  height: auto;
+  width: 400px;
+  margin: 30px auto 0;
+}
+
+.tiny {
+  width: 145px;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #000;
+
+}
+.tiny + .tiny{
+  margin-left: 15px;
+}
+.border {
+  border: 1px solid #000;
+}
+#legend-vert, .legend-vert {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.project-img-sketch {
+  width: 300px;
+  height: auto;
+  border: 1px solid #000;
+  margin: 30px 0;
+}
+.elevation-renders-long {
+  width: 970px;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.elevation-renders{
+  width: 744px;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.room-renders {
+  width: 465px;
+  height: auto;
+  display: block;
+  margin:30px auto 30px;
+}
+.ceiling-plan {
+  width: 360px;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.ceiling-legend {
+  width: 285px;
+  height: auto;
+  display: block;
+  margin: 60px auto 30px;
+}
+.electrical-plan {
+  height: auto;
+  width: 550px;
+  display:block;
+  margin: 60px auto 30px;
+}
+.blocks .caption {
+  margin-bottom: 30px;
+}
+.tiny-sketches .caption, .blocks .caption{
+font-size: 0.777em;
+font-weight: normal;
+color: #000;
+text-align: center;
+}
+.tiny-sketches .col-xs-6 {
+  text-align: center;
+}
+
+.tiny-sketches, .bubble img, .project-img-sketch, .project-img-block{
+  margin-left: auto;
+  margin-right: auto;
+}
+.blocks .caption {
+  text-align: center;
+}
+/******Musical Chairs*****/
+
+.chair-img, .chair-img-wide, .chair-img-tall {
+  text-align: center;
+  padding: 20px 0;
+}
+.chair-img img{
+  width: auto;
+  height:250px;
+
+}
+.chair-img-wide img{
+  width: 400px;
+  height: auto;
+}
+.chair-img-tall img {
+  height: 280px;
+  width: auto;
+}
+/*********Mateelda******/
+
+.logo {
+  width: 200px;
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.Mat-1 {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  margin: 0 auto 30px;
+}
+
+.cards {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Mat-2 {
+  display: inline-block;
+  width: 174px;
+  height: auto;
+  border: 1px solid #000;
+}
+.Mat-type {
+  width: 970px;
+  height: auto;
+  margin: 30px 0;
+}
+.Mat-3 img {
+  width: 317px;
+  height: 470px;
+}
+.Mat-3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.art {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/**********Furniture Design*************/
+
+.furniture-technical {
+  height: auto;
+  width: 400px;
+  max-width: 100%;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+
+.chair-model {
+  height: 391px;
+  width: auto;
+  display: inline-block;
+
+}
+.table-front {
+  width: 385px;
+  height: auto;
+  display: inline-block;
+  float: right;
+
+}
+.furniture-pics img{
+  width: 285px;
+  height: auto;
+  margin: 60px auto;
+}
+
+/*********Selkirk and 59th **********/
+.ceiling {
+  width: 430px;
+  height: auto;
+  margin: 0 auto 30px;
+}
+
+.fireplace {
+  height: auto;
+  width:588px;
+  margin: 0 auto;
+}
+.selkirk-photos img{
+
+}
+.selkirk-img1 {
+  width: 476px;
+  height: auto;
+  margin-right: 9px;
+  margin-bottom: 18px;
+}
+.selkirk-img2 {
+  width: 312px;
+  height: auto;
+  margin:0 18px 18px 11px;
+
+}
+
+.selkirk-img3 { /*smaller-light*/
+  width: 144px;
+  height: auto;
+  margin-bottom: 18px;
+}
+.selkirk-img4 {
+  width: 638px;
+  height: auto;
+  margin:0 9px 18px 0;
+}
+.selkirk-img5 {
+  width: 314px;
+  height: auto;
+  margin-left: 9px;
+}
+.selkirk-img6 {
+  width: 395px;
+  height: auto;
+  margin:0 9px 18px 0;
+}
+.selkirk-img7 {
+  width: 557px;
+  height: auto;
+  margin-left: 9px;
+}
+.selkirk-img9 {
+  width: 476px;
+  height: auto;
+  margin-left: 9px;
+}
+
+/*********Hotel**********/
+.hotel-bubble img{
+  width: 150px;
+  height: auto;
+  border: 1px solid #000;
+  display: inline-block;
+}
+.hotel-bubble img + img {
+  margin-left: 40px;
+}
+.hotel-plan {
+  width: 350px;
+  height: auto;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.hotel-plan img {
+  width: 236px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+.lobby .ceiling, .emp-lobby {
+  border: 1px solid #000;
+}
+.lounge .project-img-vert {
+  margin: 20px auto 0;
+}
+.hotel-materials .caption{
+  margin-bottom: 8px;
+}
+.model-caption {
+  text-align: center;
+  padding: 10px 0 10px;
+  font-size: 0.777em;
+}
+.small-model .model-caption {
+  margin-bottom: 30px;
+}
+.small-model .room-renders {
+  margin-bottom: 0;
+}
+.hotel-page .ceiling {
+  margin-top: 30px;
+}
+ .materials-center {
+  text-align: center;
+}
+.materials-vert-center {
+  text-align: center;
+}
+
+/***********Empire Cruise Ship********/
+.cruise-sketches .caption {
+  font-size: 1em;
+ display: inline;
+ color: #000;
+}
+.cruise-sketches p + p {
+  margin-left: 9em;
+}
+.emp-indent p{
+  margin-left: 1em;
+}
+.img-wide {
+  margin: 30px 0;
+}
+.cruise-sketches {
+  padding: 30px 0;
+  font-size: 0.777em;
+}
+.cruise-sketches img{
+  border: 1px solid #000;
+
+}
+.motif {
+  width: 229px;
+  height: auto;
+  margin: 0 9px 0 0;
+}
+.knob {
+  width: 229px;
+  height: auto;
+  margin: 0 9px;
+}
+.empire6 {
+  width: 474px;
+  height: auto;
+  margin: 0 0 0px 9px;
+}
+.tassle {
+  width: 229px;
+  height: auto;
+  margin: 9px 9px 0 0;
+}
+.chandelier {
+  width: 229px;
+  height: auto;
+  margin: 0 9px 0px 0;
+}
+.wall {
+  width: 229px;
+  height: auto;
+  margin: 0 9px 0px 9px;
+}
+
+.empire4 {
+    width: 229px;
+    height: auto;
+    margin: 9px 9px 0px 9px;
+}
+.rec-ceiling {
+  width: 557px;
+  height: auto;
+  margin: 0 9px 0px 0;
+}
+.fountain {
+  width: 395px;
+  height: auto;
+  margin: 0 0 0px 9px;
+}
+
+/***********Lighting Design********/
+.small-light {
+  width: 230px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.design-brief {
+  margin-top: 60px;
+}
+.design-brief p {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.design-brief hr {
+  border-top: 2px solid #013664; /*navy blue */
+}
+.design-brief h3 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.design-brief th {
+  padding-right: 30px;
+}
+table tr:nth-last-of-type(2) {
+  border-bottom: 1px solid #000;
+}
+td {
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+
+
+/********
+TOP-NAV
+*********/
+
+.top-nav {
+  /*margin-left: 485px;*/
+  padding-top: 23px;
+  height: 63px;
+  /*width: 485px;*/
+  width: 90%;
+  top: 0;
+  font-size: 0.777em;
+
+}
+.top-nav ul {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  list-style-type: none;
+  /*width: 485px;*/
+  /*width: 90%;*/
+  z-index: 10;
+  right: 20px;
+
+}
+.project-page:after {
+    background: #fff;
+    content: "";
+    height: 63px;
+    left: 0;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.top-nav li, .top-nav li a {
+  display: inline-block;
+  /*float: left;*/
+}
+.top-nav ul li:nth-of-type(n+2) {
+  float: right !important;
+  margin-left: 20px;
+}
+
+/***********
+MEDIA QUERIES
+*************/
+
+
+@media (min-width: 768px) {
+  .grid {
+    width: 750px;
+    padding-top: 100px;
+  }
+  footer {
+    padding: 90px 0 60px 0;
+  }
+    .project-page {
+    padding: 20px 0 0 0;
+    }
+
+    .top-nav ul{
+    padding: 0;
+    margin-left: 410px;
+    width: 410px;
+    }
+
+    .logo {
+      margin-bottom: 90px;
+    }
+
+    .Mat-type {
+      margin: 90px 0;
+    }
+    .heading-right {
+      text-align: right;
+    }
+    .selkirk-img3 {
+      width: 100px;
+      height: auto;
+      margin-bottom: 18px;
+      float:right;
+    }
+    .tiny-sketches .caption {
+      text-align: left;
+    }
+    .tiny-sketches .col-xs-6 {
+      text-align: left;
+    }
+    footer .container .row {
+      margin: 0;
+    }
+
+}
+
+@media (min-width: 992px) {
+  .chair-img img{
+    width: auto;
+    height:170px;
+  }
+  .chair-img-wide img{
+    width: 300px;
+    height: auto;
+  }
+  .chair-img-tall img {
+    height: 200px;
+    width: auto;
+  }
+  .cards {
+    text-align: right;
+    margin: 0;
+  }
+  .Mat-2:first-child {
+    margin-right: 10%;
+  }
+
+  .container {
+    width: 850px;
+  }
+  #logo {
+    top:30px;
+    left: 30px;
+  }
+  .pp-logo {
+    left: 30px;
+  }
+  .top-nav ul {
+    right:auto;
+  }
+  .materials-row h3{
+    text-align: center;
+  }
+  .heading-right {
+    text-align: right;
+  }
+
+  .bubble img, .furniture-technical {
+    margin-left: 0;
+  }
+  .hotel-bubble {
+    text-align: left;
+  }
+  .lounge .project-img-vert {
+    margin: 20px 0 0 auto;
+  }
+
+  .cruise-sketches img, .selkirk-photos img {
+    max-width: 90%;
+  }
+
+  .col-mot img {
+    width: 84px;
+    height: auto;
+  }
+  .col-1 {
+    padding-right: 30px;
+    border-right: 1px solid #000;
+  }
+  .col-2 {
+    padding-left: 30px;
+  }
+  .selkirk-img3 {
+    width: 144px;
+    height: auto;
+    float: right;
+    margin-bottom: 18px;
+  }
+  .cruise-sketches p + p {
+    margin-left: 5em;
+  }
+  .go-left {
+    float: left;
+  }
+  .go-right {
+    float: right;
+  }
+  #legend-vert, .legend-vert {
+    text-align: left !important;
+  }
+  .materials-vert-center {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1092px){
+  .grid {
+    padding-top: 110px;
+    width: 970px;
+  }
+    .project-page {
+      padding: 50px 0 0 0;
+    }
+    .container {
+      padding:0;
+      width: 970px;
+    }
+    .top-nav ul {
+    margin-left: 485px;
+    width: 485px;
+  }
+  .cruise-sketches img, .selkirk-photos img {
+    max-width: 100%;
+  }
+  .motif {
+    width: 229px;
+    height: auto;
+  }
+  .cruise-sketches p + p {
+    margin-left: 9em;
+  }
+
+}
