@@ -139,7 +139,11 @@ SIDEBAR
 .sidebar-nav li a:focus {
     text-decoration: none;
 }
-
+.large-print {
+  font-size: 1.777em;
+  margin-top: 20px;
+  font-weight: bold;
+}
 .blurb {
   text-indent: 0;
   padding: 20px;
@@ -347,7 +351,7 @@ PROJECT PAGES
   padding:60px 0;
 }
 .project-page h2 {
-  
+
   margin:0;
   padding-bottom: 30px;
   font-weight: bold;
