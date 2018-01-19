@@ -16,7 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,100i,700' rel='stylesheet' type='text/css'>
     <link href="css/full.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -47,22 +47,22 @@
               <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle "><i class="fa fa-times"></i></a>
 
               <li class="top-item">
-                  <a href="#filter=*" class="button selected" data-filter="*" onclick = $("#menu-close").click(); >all</a>
+                  <a href="#filter=*" class="filter filter-all active" data-filter="*" onclick = $("#menu-close").click(); >all</a>
               </li>
               <li>
-                  <a href="#filter=.retail" class="button" data-filter=".retail" onclick = $("#menu-close").click(); >retail</a>
+                  <a href="#filter=.retail" class="filter filter-retail" data-filter=".retail" onclick = $("#menu-close").click(); >retail</a>
               </li>
               <li>
-                  <a href="#filter=.residential" class="button" data-filter=".residential" onclick = $("#menu-close").click(); >residential</a>
+                  <a href="#filter=.residential" class="filter filter-residential" data-filter=".residential" onclick = $("#menu-close").click(); >residential</a>
               </li>
               <li>
-                  <a href="#filter=.office" class="button" data-filter=".office" onclick = $("#menu-close").click(); >office</a>
+                  <a href="#filter=.office" class="filter filter-office" data-filter=".office" onclick = $("#menu-close").click(); >office</a>
               </li>
               <li>
-                  <a href="#filter=.hospitality" class="button" data-filter=".hospitality" onclick = $("#menu-close").click(); >hospitality</a>
+                  <a href="#filter=.hospitality" class="filter filter-hospitality" data-filter=".hospitality" onclick = $("#menu-close").click(); >hospitality</a>
               </li>
               <li>
-                  <a href="#filter=.other" class="button" data-filter=".other" onclick = $("#menu-close").click(); >other</a>
+                  <a href="#filter=.other" class="filter filter-other" data-filter=".other" onclick = $("#menu-close").click(); >other</a>
               </li>
               <br>
               <li>
@@ -81,7 +81,7 @@
       </nav>
 
     <!-- Projects Grid -->
-  <div class="container">
+<!--  <div class="container">
     <div class="grid">
       <div class="grid-item hospitality">
         <a href="projects/new_retro_bar.html">
@@ -190,18 +190,163 @@
         </a>
       </div>
 
-
-
-
-    </div> <!-- end Grid -->
-  </div> <!-- end contanier -->
+    </div>  end Grid
+  </div> end contanier -->
+<div class='grid-wrapper'>
+  <section>
+		<article class='hex-grid-item hospitality all'>
+      <div>
+			  <a href='projects/hotel.html'>
+          <h2>Hotel</h2>
+        </a>
+				<p>hospitality</p>
+			</div>
+			<img alt='hotel lobby and bar render' src='img/hotel/new-lobby-bar.jpg' />
+		</article>
+		<article class='hex-grid-item office all'>
+			<div>
+			  <a href='projects/form3.html'>
+          <h2>Form 3</h2>
+        </a>
+				<p>office</p>
+			</div>
+			<img alt='Form3 office reception render' src='img/form3/new-reception.png' />
+		</article>
+		<article class='hex-grid-item residential all'>
+			<div>
+				<a href='projects/trailer.html'>
+          <h2>Compact Living</h2>
+        </a>
+			  <p>residential</p>
+    </div>
+			<img alt='' src='img/trailer/iso-square.jpg' />
+		</article>
+		<article class='hex-grid-item residential all'>
+			<div>
+				<a href='projects/selkirk_and_59th.html'>
+          <h2>Selkirk + 59th</h2>
+        </a>
+			  <p>residential</p>
+    </div>
+			<img alt='' src='img/selkirk/pantry.jpg' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+        <a href='projects/design_build.html'>
+				  <h2>Design + Build</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt='' src='img/lighting/new-light-image.jpg' />
+		</article>
+    <article class='hex-grid-item residential all'>
+			<div>
+				<a href='projects/other_residential.html'>
+          <h2>Other Residential</h2>
+        </a>
+			  <p>residential</p>
+    </div>
+			<img alt='' src='img/other-residential/fridge-island.jpg' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+        <a href='projects/eco_fashion_week.html'>
+          <h2>Eco Fashion Week</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt src='img/eco/new-efw-square.jpg' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+				<a href='projects/musical_chairs.html'>
+          <h2>Musical Chairs</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt src='img/chairs/new-bloom-chair.jpg' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+        <a href='projects/artwork.html'>
+				  <h2>Artwork</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt='' src='img/other/new-portrait.jpg' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+        <a href='projects/mateelda.html'>
+			    <h2>Graphics + Branding</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt='' src='img/branding/uniform-design.png' />
+		</article>
+		<article class='hex-grid-item other all'>
+			<div>
+        <a href='projects/phtotography.html'>
+			    <h2>Photography</h2>
+        </a>
+				<p>other</p>
+			</div>
+			<img alt='' src='img/photography/cityscape-square.jpg' />
+		</article>
+		<article class='hex-grid-item hospitality all'>
+			<div>
+        <a href='projects/new_retro_bar.html'>
+				  <h2>New Retro Bar</h2>
+        </a>
+				<p>hospitality</p>
+			</div>
+			<img alt='' src='' />
+		</article>
+		<article class='hex-grid-item hospitality all'>
+			<div>
+        <a href='projects/relaxation_spa.html'>
+			    <h2>Relaxation Spa</h2>
+        </a>
+				<p>hospitality</p>
+			</div>
+			<img alt='' src='' />
+		</article>
+    <article class='hex-grid-item hospitality all'>
+			<div>
+        <a href='projects/empire_cruise_ship.html'>
+			    <h2>Empire Cruise Ship</h2>
+        </a>
+				<p>hospitality</p>
+			</div>
+			<img alt='' src='' />
+		</article>
+    <article class='hex-grid-item retail all'>
+			<div>
+        <a href='projects/childrens_store.html'>
+          <h2>Children's Store</h2>
+        </a>
+				<p>retail</p>
+			</div>
+			<img alt='' src='' />
+		</article>
+    <article class='hex-grid-item retail all'>
+			<div>
+        <a href='projects/chocolatea.html'>
+			    <h2>Chocolatea</h2>
+        </a>
+				<p>retail</p>
+			</div>
+			<img alt='' src='' />
+		</article>
+  </section>
+</div>
 
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-xs-6">
             <ul>
-              <li>Toby Lee Designs Copyright 2016</li>
+              <li>Toby Lee Designs Copyright 2018</li>
 
             </ul>
           </div>
@@ -226,12 +371,67 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Load screen -->
     <script>
-    $(window).load(function() {
+    $(window).load(function () {
         // Animate loader off screen
-        $(".splash").fadeOut("slow");
-    });
+        $('.splash').fadeOut('slow');
+      });
 
-</script>
+      // Show all
+  $('.filter-all').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.all').removeClass('hide-hex');
+  });
+
+  // Show office
+  $('.filter-office').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.office').removeClass('hide-hex');
+    $('.hospitality, .residential, .other, .retail').addClass('hide-hex');
+  });
+
+  // Show hospitality
+  $('.filter-hospitality').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.hospitality').removeClass('hide-hex');
+    $('.office, .residential, .other, .retail').addClass('hide-hex');
+  });
+
+  // Show residential
+  $('.filter-residential').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.residential').removeClass('hide-hex');
+    $('.hospitality, .office, .other, .retail').addClass('hide-hex');
+  });
+
+  //show other
+  $('.filter-other').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.other').removeClass('hide-hex');
+    $('.hospitality, .residential, .office, .retail').addClass('hide-hex');
+  });
+
+  //show retail
+  $('.filter-retail').on('click', function() {
+    var $this = $(this);
+    $('.filter').removeClass('active');
+    $this.addClass('active');
+    $('.retail').removeClass('hide-hex');
+    $('.hospitality, .residential, .other, .office').addClass('hide-hex');
+  });
+
+
+
+    </script>
     <script>
        // Closes the sidebar menu
        $("#menu-close").click(function(e) {
@@ -266,55 +466,26 @@
 
 
         <!--Isotope -->
-        <script src="js/isotope.pkgd.min.js"></script>
+        <!-- <script src="js/isotope.pkgd.min.js"></script> -->
         <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
         <script>
-        var $grid = $('.grid');
+        var $grid = $('.wrap-grid');
 
-          $('.grid').isotope({
-            itemSelector: '.grid-item',
-            masonry: {
-              columnWidth: 232,
-              gutter: 14
-            }
+          $('.wrap-grid').isotope({
+            itemSelector: '.hex-grid-item',
+
+            // masonry: {
+            //   columnWidth: 232,
+            //   gutter: 14
+            // }
           });
 
         $('#filters a').click(function(){
-          //filters results when a category is selected from the sidebar menu
+                //filters results when a category is selected from the sidebar menu
                 var selector = $(this).attr('data-filter');
                 $grid.isotope({ filter: selector });
                 return false;
               });
-
-// $(document).ready( function() { **this code does not work for filters**
-//   var $grid = $('.grid');
-//
-//     // init Isotope after all images have loaded
-//    $grid.isotope({
-//       // options...
-//       itemSelector: '.grid-item',
-//           masonry: {
-//             columnWidth: 232,
-//             gutter: 14
-//           }
-//     });
-//     $('#filters a').click(function(){
-//             var selector = $(this).attr('data-filter');
-//             $grid.isotope({ filter: selector });
-//             return false;
-//           });
-//
-//
-//   $grid.imagesLoaded().progress( function() {
-//     $grid.isotope('layout');
-//
-//   });
-//
-// });
-
-
-
-
 
         </script>
 

@@ -592,6 +592,10 @@ text-align: center;
 .art {
   margin-top: 0;
   margin-bottom: 30px;
+  width: 95%;
+}
+.art-page h3 {
+  text-align: left;
 }
 
 /**********Furniture Design*************/
@@ -885,6 +889,120 @@ TOP-NAV
   margin-left: 20px;
 }
 
+/***********
+HEXAGON GRID
+************/
+*, *:after, *:before {box-sizing: inherit;}
+* {margin:0;padding:0;border: 0 none; position: relative;}
+:root {
+	--Nhexa: 4;
+	--gap: 2vw;
+	--size: calc(calc(100vw / var(--Nhexa)) - var(--gap));
+}
+@media only screen and (min-width: 1100px) {:root {--Nhexa: 4;}}
+@media only screen and (max-width: 769px) {
+	:root {--Nhexa: 2;}
+	body {margin-right: calc(var(--size) * .3);}
+}
+
+.grid-wrapper {
+  box-sizing: border-box;
+	padding-right: calc(var(--size) * .5);
+  padding-top: calc(var(--size) * .5);
+	hyphens: auto;
+}
+.grid-wrapper section {
+  margin: calc(var(--size) * .5) auto 0;
+  width: calc(var(--size) * calc(var(--Nhexa) - 1));
+	display: grid;
+	grid-template-columns: repeat(var(--Nhexa), 1fr);
+	grid-gap: var(--gap);
+}
+.grid-wrapper article {
+	background: rgba(0, 0, 0, 0.8);
+  width: var(--size);
+  height: calc(var(--size) / 1.1111111);
+	clip-path: url(#hexagono);
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  margin-right: calc(var(--size) / 2);
+	color: #fff;
+	overflow: hidden;
+}
+.grid-wrapper article:nth-child(2n) {
+  margin: calc(var(--size) * -.5) calc(var(--size) * -.25) 0 calc(var(--size) * -.75);
+}
+.grid-wrapper article::before {
+	content: '';
+	float: left;
+	width: 25%;
+	height: 100%;
+	clip-path: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
+	shape-outside: polygon(0% 0%, 100% 0%, 0% 50%, 100% 100%, 0% 100%);
+}
+.grid-wrapper img {
+  width: var(--size);
+	height: var(--size);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: 0% 50%;
+	transition: .75s;
+	clip-path: url(#hexagono);
+	clip-path: inherit;
+	z-index:  10;
+}
+.grid-wrapper article:hover img {
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.grid-wrapper article > div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	max-width: 50%;
+	height: 100%;
+	color: #fff;
+	transition: .75s .05s;
+  text-align: center;
+}
+.grid-wrapper h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.grid-wrapper article > div p {
+	width: 100%;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.grid-wrapper a {
+  color: #fff;
+}
+.grid-wrapper a:hover {
+  text-decoration: none;
+}
+.hide-hex {
+  animation: fadeOut 150ms ease;
+  opacity: 0 /* play with this to control opacity of hidden images*/
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* initial opacity*/
+  }
+  100% {
+    opacity: 0; /*final opacity; must match with opacity in the CSS class (below "animation: ")*/
+  }
+}
+/* This animation completely removes the images from the grid*/
+
+.hide-hex {
+  display: none;
+}
 /***********
 MEDIA QUERIES
 *************/
