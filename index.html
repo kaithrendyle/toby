@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Toby Lee - Interior Designer - VCAD graduate">
-
+    <meta name="description" content="Toby Lee is a results-oriented interior designer who delivers updated, creative designs within strict time frames.">
 
     <title>Toby Lee Designs</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,100i,700' rel='stylesheet' type='text/css'>
     <link href="css/full.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico"/>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,314 +25,159 @@
 </head>
 
 <body>
-  <div class="splash">
-  </div>
+  <div class="splash"></div>
 
   <div>
-    <img class="img-responsive" id="logo" src="img/logo.png" alt"" />
+    <a href="index.html"><img id="logo" src="img/logo.png" alt"" /></a>
     <h1 class="hidden">Toby Lee</h1>
-
   </div>
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-      <nav id="sidebar-wrapper">
-          <ul class="sidebar-nav button-group" id="filters">
-              <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle "><i class="fa fa-times"></i></a>
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav button-group" id="filters">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle "><i class="fa fa-times"></i></a>
 
-              <li class="top-item">
-                  <a href="#filter=*" class="filter filter-all active" data-filter="*" onclick = $("#menu-close").click(); >all</a>
-              </li>
-              <li>
-                  <a href="#filter=.retail" class="filter filter-retail" data-filter=".retail" onclick = $("#menu-close").click(); >retail</a>
-              </li>
-              <li>
-                  <a href="#filter=.residential" class="filter filter-residential" data-filter=".residential" onclick = $("#menu-close").click(); >residential</a>
-              </li>
-              <li>
-                  <a href="#filter=.office" class="filter filter-office" data-filter=".office" onclick = $("#menu-close").click(); >office</a>
-              </li>
-              <li>
-                  <a href="#filter=.hospitality" class="filter filter-hospitality" data-filter=".hospitality" onclick = $("#menu-close").click(); >hospitality</a>
-              </li>
-              <li>
-                  <a href="#filter=.other" class="filter filter-other" data-filter=".other" onclick = $("#menu-close").click(); >other</a>
-              </li>
-              <br>
-              <li>
-                  <a href="resume.pdf" onclick = $("#menu-close").click(); >r&#233;sum&#233;</a>
-              </li>
-              <li>
-                  <a href="mailto: tobysharonlee@gmail.com" onclick = $("#menu-close").click(); >contact</a>
-              </li>
-              <li class="large-print">Toby Lee
-              </li>
-              <li><p class="blurb">
-              Rencent graduate of Vancouver College of Art and Design, Interior Design diploma.</p>
-            </li>
+        <li class="top-item">
+            <a href="#filter=*" class="filter filter-all active" data-filter="*" onclick = $("#menu-close").click(); >all</a>
+        </li>
+        <li>
+            <a href="#filter=.residential" class="filter filter-residential" data-filter=".residential" onclick = $("#menu-close").click(); >residential</a>
+        </li>
+        <li>
+            <a href="#filter=.office" class="filter filter-office" data-filter=".office" onclick = $("#menu-close").click(); >office</a>
+        </li>
+        <li>
+            <a href="#filter=.hospitality" class="filter filter-hospitality" data-filter=".hospitality" onclick = $("#menu-close").click(); >hospitality</a>
+        </li>
+        <li>
+            <a href="#filter=.other" class="filter filter-other" data-filter=".other" onclick = $("#menu-close").click(); >other</a>
+        </li>
+        <br>
+        <li>
+            <a href="resume.pdf" onclick = $("#menu-close").click(); >r&#233;sum&#233;</a>
+        </li>
+        <li>
+            <a href="mailto:tobysharonlee@gmail.com" onclick = $("#menu-close").click(); >contact</a>
+        </li>
+        <li class="large-print">Toby Lee
+        </li>
+        <li><p class="blurb">Results-oriented designer who delivers updated, creative designs within strict time frames. </p>
+      </li>
+    </ul>
+  </nav>
 
-          </ul>
-      </nav>
-
-    <!-- Projects Grid -->
-<!--  <div class="container">
-    <div class="grid">
-      <div class="grid-item hospitality">
-        <a href="projects/new_retro_bar.html">
-          <h2>New Retro Bar</h2>
-          <img class="solus-cover" src="img/bar-Model.jpg" alt="New Retro Bar model"/>
-        </a>
+  <div class='grid-wrapper'>
+    <section>
+  		<article class='hex-grid-item hospitality all'>
+        <div>
+  			  <a href='projects/hotel.html'>
+            <h2>Hotel</h2>
+          </a>
+  				<p>hospitality</p>
+  			</div>
+  			<img alt='hotel lobby and bar render' src='img/hotel/new-lobby-bar.jpg' />
+  		</article>
+  		<article class='hex-grid-item office all'>
+  			<div>
+  			  <a href='projects/form3.html'>
+            <h2>Form 3</h2>
+          </a>
+  				<p>office</p>
+  			</div>
+  			<img alt='Form3 office reception render' src='img/form3/new-reception.png' />
+  		</article>
+  		<article class='hex-grid-item residential all'>
+  			<div>
+  				<a href='projects/trailer.html'>
+            <h2>Compact Living</h2>
+          </a>
+  			  <p>residential</p>
       </div>
-
-      <div class="grid-item grid-item--width2 office">
-        <a href="projects/form3.html">
-          <h2>Form3</h2>
-          <img class="form3-cover" src="img/form3-cover.jpg" alt="Form3 render"/>
-        </a>
+  			<img alt='inside of trailer render' src='img/trailer/iso-square.jpg' />
+  		</article>
+  		<article class='hex-grid-item residential all'>
+  			<div>
+  				<a href='projects/selkirk_and_59th.html'>
+            <h2>Selkirk + 59th</h2>
+          </a>
+  			  <p>residential</p>
       </div>
-
-      <div class="grid-item retail">
-        <a href="projects/childrens_store.html">
-          <h2>Children's Store</h2>
-          <img class="solus-cover" src="img/childrens-model.jpg" alt="Children's store model"/>
-        </a>
+  			<img alt='renovated pantry' src='img/selkirk/pantry.jpg' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+          <a href='projects/design_build.html'>
+  				  <h2>Design + Build</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt='handmade light' src='img/lighting/new-light-image.jpg' />
+  		</article>
+      <article class='hex-grid-item residential all'>
+  			<div>
+  				<a href='projects/other_residential.html'>
+            <h2>Other Residential</h2>
+          </a>
+  			  <p>residential</p>
       </div>
-
-      <div class="grid-item residential">
-        <a href="projects/selkirk_and_59th.html">
-          <h2>Selkirk and 59th</h2>
-          <img class="selkirk-cover" src="img/selkirk/pantry.jpg" alt=""/>
-        </a>
-      </div>
-
-      <div class="grid-item other">
-        <a href="projects/musical_chairs.html">
-          <h2>Musical Chairs</h2>
-          <img class="chair-cover" src="img/bloom-chair.jpg" alt="chair illustration"/>
-        </a>
-      </div>
-
-      <div class="grid-item office">
-        <a href="projects/solus_trust.html">
-          <h2>Solus Trust</h2>
-          <img class="solus-cover" src="img/solus-model.png" alt="Solus Trust model"/>
-        </a>
-      </div>
-      <div class="grid-item grid-item--height2 other">
-        <a href="projects/mateelda.html">
-          <h2>Mateelda</h2>
-          <img class="regular-cover" src="img/business-card-front.png" alt="front of Mateelda business card "/>
-        </a>
-      </div>
-
-      <div class="grid-item grid-item--width2 other">
-        <a href="projects/artwork.html">
-          <h2>Artwork</h2>
-          <img class="nowthen-cover" src="img/now-vs-then.jpg" alt="mixed media illustration of church"/>
-        </a>
-      </div>
-
-      <div class="grid-item residential">
-        <a href="projects/trailer.html">
-          <h2>Trailer</h2>
-          <img class="trailer-cover"src="img/trailer-perspective.jpg" alt=""/>
-        </a>
-      </div>
-
-      <div class="grid-item hospitality">
-        <a href="projects/empire_cruise_ship.html">
-          <h2>Empire Cruise Ship</h2>
-          <img class="selkirk-cover" src="img/empire/banquet-hall-sketch.jpg" alt=""/></a>
-      </div>
-
-      <div class="grid-item hospitality">
-        <a href="projects/relaxation_spa.html">
-          <h2>Relaxation Spa</h2>
-          <img class="spa-cover" src="img/spa-model.jpg" alt="Relaxation spa model"/></a>
-      </div>
-
-      <div class="grid-item grid-item--width2 hospitality">
-        <a href="projects/hotel.html">
-          <h2>Hotel</h2>
-          <img class="nowthen-cover" src="img/hotel/lounge-sideview.jpg" alt=""/>
-        </a>
-      </div>
-
-      <div class="grid-item  other">
-        <a href="projects/lighting_design.html">
-          <h2>Lighting Design</h2>
-          <img class="regular-cover" src="img/lighting/light.jpg" alt=""/>
-        </a>
-      </div>
-
-      <div class="grid-item grid-item--width2 retail">
-        <a href="projects/chocolatea.html">
-          <h2>Chocolatea</h2>
-          <img class="chocolatea-cover" src="img/chocolatea-cover.jpg" alt="Chocolatea cafe render"/>
-        </a>
-      </div>
-
-      <div class="grid-item grid-item--height2 other">
-        <a href="projects/furniture_design.html">
-          <h2>Furniture Design</h2>
-          <img class="cardboard-cover" src="img/furniture_design/chair-and-stool.jpg" alt=""/></a>
-      </div>
-      <div class="grid-item grid-item--width2  other">
-        <a href="projects/eco_fashion_week.html">
-          <h2>Eco Fashion Week</h2>
-          <img class="form3-cover" src="img/eco/efw-wide-sm.jpg" alt=""/>
-        </a>
-      </div>
-
-    </div>  end Grid
-  </div> end contanier -->
-<div class='grid-wrapper'>
-  <section>
-		<article class='hex-grid-item hospitality all'>
-      <div>
-			  <a href='projects/hotel.html'>
-          <h2>Hotel</h2>
-        </a>
-				<p>hospitality</p>
-			</div>
-			<img alt='hotel lobby and bar render' src='img/hotel/new-lobby-bar.jpg' />
-		</article>
-		<article class='hex-grid-item office all'>
-			<div>
-			  <a href='projects/form3.html'>
-          <h2>Form 3</h2>
-        </a>
-				<p>office</p>
-			</div>
-			<img alt='Form3 office reception render' src='img/form3/new-reception.png' />
-		</article>
-		<article class='hex-grid-item residential all'>
-			<div>
-				<a href='projects/trailer.html'>
-          <h2>Compact Living</h2>
-        </a>
-			  <p>residential</p>
-    </div>
-			<img alt='' src='img/trailer/iso-square.jpg' />
-		</article>
-		<article class='hex-grid-item residential all'>
-			<div>
-				<a href='projects/selkirk_and_59th.html'>
-          <h2>Selkirk + 59th</h2>
-        </a>
-			  <p>residential</p>
-    </div>
-			<img alt='' src='img/selkirk/pantry.jpg' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-        <a href='projects/design_build.html'>
-				  <h2>Design + Build</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt='' src='img/lighting/new-light-image.jpg' />
-		</article>
-    <article class='hex-grid-item residential all'>
-			<div>
-				<a href='projects/other_residential.html'>
-          <h2>Other Residential</h2>
-        </a>
-			  <p>residential</p>
-    </div>
-			<img alt='' src='img/other-residential/fridge-island.jpg' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-        <a href='projects/eco_fashion_week.html'>
-          <h2>Eco Fashion Week</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt src='img/eco/new-efw-square.jpg' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-				<a href='projects/musical_chairs.html'>
-          <h2>Musical Chairs</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt src='img/chairs/new-bloom-chair.jpg' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-        <a href='projects/artwork.html'>
-				  <h2>Artwork</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt='' src='img/other/new-portrait.jpg' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-        <a href='projects/mateelda.html'>
-			    <h2>Graphics + Branding</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt='' src='img/branding/uniform-design.png' />
-		</article>
-		<article class='hex-grid-item other all'>
-			<div>
-        <a href='projects/phtotography.html'>
-			    <h2>Photography</h2>
-        </a>
-				<p>other</p>
-			</div>
-			<img alt='' src='img/photography/cityscape-square.jpg' />
-		</article>
-		<article class='hex-grid-item hospitality all'>
-			<div>
-        <a href='projects/new_retro_bar.html'>
-				  <h2>New Retro Bar</h2>
-        </a>
-				<p>hospitality</p>
-			</div>
-			<img alt='' src='' />
-		</article>
-		<article class='hex-grid-item hospitality all'>
-			<div>
-        <a href='projects/relaxation_spa.html'>
-			    <h2>Relaxation Spa</h2>
-        </a>
-				<p>hospitality</p>
-			</div>
-			<img alt='' src='' />
-		</article>
-    <article class='hex-grid-item hospitality all'>
-			<div>
-        <a href='projects/empire_cruise_ship.html'>
-			    <h2>Empire Cruise Ship</h2>
-        </a>
-				<p>hospitality</p>
-			</div>
-			<img alt='' src='' />
-		</article>
-    <article class='hex-grid-item retail all'>
-			<div>
-        <a href='projects/childrens_store.html'>
-          <h2>Children's Store</h2>
-        </a>
-				<p>retail</p>
-			</div>
-			<img alt='' src='' />
-		</article>
-    <article class='hex-grid-item retail all'>
-			<div>
-        <a href='projects/chocolatea.html'>
-			    <h2>Chocolatea</h2>
-        </a>
-				<p>retail</p>
-			</div>
-			<img alt='' src='' />
-		</article>
-  </section>
-</div>
+  			<img alt='renovated kitchen' src='img/other-residential/fridge-island.jpg' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+          <a href='projects/eco_fashion_week.html'>
+            <h2>Eco Fashion Week</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt='eco fashion week set' src='img/eco/new-efw-square.jpg' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+  				<a href='projects/musical_chairs.html'>
+            <h2>Musical Chairs</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt='marker drawing of blue bloom chair' src='img/chairs/new-bloom-chair.jpg' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+          <a href='projects/artwork.html'>
+  				  <h2>Artwork</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt="pencial drawing of woman's face" src='img/other/new-portrait.jpg' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+          <a href='projects/graphics_branding.html'>
+  			    <h2>Graphics + Branding</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt='apron design for cafe' src='img/branding/uniform-design.png' />
+  		</article>
+  		<article class='hex-grid-item other all'>
+  			<div>
+          <a href='projects/photography.html'>
+  			    <h2>Photography</h2>
+          </a>
+  				<p>other</p>
+  			</div>
+  			<img alt='vancouver at night' src='img/photography/cityscape-square.jpg' />
+  		</article>
+  		<article class='hex-grid-item hospitality all'>
+  			<div>
+          <a href='projects/relaxation_spa.html'>
+  			    <h2>Relaxation Spa</h2>
+          </a>
+  				<p>hospitality</p>
+  			</div>
+  			<img alt='spa top view model' src='img/spa/spa-square.jpg' />
+  		</article>
+    </section>
+  </div>
 
     <footer>
       <div class="container">
@@ -347,26 +185,20 @@
           <div class="col-xs-6">
             <ul>
               <li>Toby Lee Designs Copyright 2018</li>
-
             </ul>
           </div>
           <div class="col-xs-6 pull-right">
             <ul class="info pull-right">
               <li><a href="resume.pdf" >r&#233;sum&#233;</a></li>
               <li><a href="https://ca.linkedin.com/in/tobyslee" >linkedin</a></li>
-              <li><a href="mailto: tobysharonlee@gmail.com" >contact</a></li>
+              <li><a href="mailto:tobysharonlee@gmail.com" >contact</a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-
-
-
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Load screen -->
@@ -420,74 +252,24 @@
     $('.hospitality, .residential, .office, .retail').addClass('hide-hex');
   });
 
-  //show retail
-  $('.filter-retail').on('click', function() {
-    var $this = $(this);
-    $('.filter').removeClass('active');
-    $this.addClass('active');
-    $('.retail').removeClass('hide-hex');
-    $('.hospitality, .residential, .other, .office').addClass('hide-hex');
+
+  </script>
+  <script>
+  // Closes the sidebar menu
+  $("#menu-close").click(function(e) {
+     e.preventDefault();
+     $("#sidebar-wrapper").toggleClass("active");
   });
 
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
+     e.preventDefault();
+     $("#sidebar-wrapper").toggleClass("active");
+  });
+
+  </script>
 
 
-    </script>
-    <script>
-       // Closes the sidebar menu
-       $("#menu-close").click(function(e) {
-           e.preventDefault();
-           $("#sidebar-wrapper").toggleClass("active");
-       });
-
-       // Opens the sidebar menu
-       $("#menu-toggle").click(function(e) {
-           e.preventDefault();
-           $("#sidebar-wrapper").toggleClass("active");
-       });
-
-       // Scrolls to the selected menu item on the page
-      //  $(function() {
-      //      $('a[href*=#]:not([href=#])').click(function() {
-      //          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-       //
-      //              var target = $(this.hash);
-      //              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      //              if (target.length) {
-      //                  $('html,body').animate({
-      //                      scrollTop: target.offset().top
-      //                  }, 1000);
-      //                  return false;
-      //              }
-      //          }
-      //      });
-      //  });
-       </script>
-
-
-
-        <!--Isotope -->
-        <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-        <script>
-        var $grid = $('.wrap-grid');
-
-          $('.wrap-grid').isotope({
-            itemSelector: '.hex-grid-item',
-
-            // masonry: {
-            //   columnWidth: 232,
-            //   gutter: 14
-            // }
-          });
-
-        $('#filters a').click(function(){
-                //filters results when a category is selected from the sidebar menu
-                var selector = $(this).attr('data-filter');
-                $grid.isotope({ filter: selector });
-                return false;
-              });
-
-        </script>
 
 </body>
 

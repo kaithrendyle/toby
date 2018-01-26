@@ -17,11 +17,11 @@ body, html {
   position: absolute;
   z-index:999;
   left: 0;
-  margin-left: auto;
-  margin-right: auto;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: url("img/logo.png") center no-repeat #fff;
+  /* background: url("../img/logo.png") center no-repeat; */
+  background:  #fff;
 }
 
 a {
@@ -341,6 +341,7 @@ footer ul li  {
 .info li{
   display: block;
   text-align: right;
+  padding: 3px 0;
 }
 
 
@@ -351,27 +352,24 @@ PROJECT PAGES
   padding:60px 0;
 }
 .project-page h2 {
-
-  margin:0;
+  margin: 0;
   padding-bottom: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.project-page h3 {
-  display: block;
-  padding-right: 20px;
-  text-align: center;
-}
+
 .row-left h3{
   text-align: left;
 }
-.project-page .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-xs-6 {
+.col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-xs-6 {
   padding: 0;
 }
 .row {
   margin: 0;
 }
-
+.img-border {
+  border: 1px solid #000;
+}
 .project-page p {
   font-size: 1.333em;
   color: #ababab; /*light grey*/
@@ -456,9 +454,7 @@ PROJECT PAGES
 .tiny + .tiny{
   margin-left: 15px;
 }
-.border {
-  border: 1px solid #000;
-}
+
 #legend-vert, .legend-vert {
   display: block;
   margin-top: 40px;
@@ -587,7 +583,14 @@ text-align: center;
   text-align: center;
   margin-bottom: 30px;
 }
-
+.loyalty-card-divider:before {
+  width:1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+}
 
 .art {
   margin-top: 0;
@@ -688,15 +691,7 @@ text-align: center;
 }
 
 /*********Hotel**********/
-.hotel-bubble img{
-  width: 150px;
-  height: auto;
-  border: 1px solid #000;
-  display: inline-block;
-}
-.hotel-bubble img + img {
-  margin-left: 40px;
-}
+
 .hotel-plan {
   width: 350px;
   height: auto;
@@ -712,9 +707,7 @@ text-align: center;
 .lobby .ceiling, .emp-lobby {
   border: 1px solid #000;
 }
-.lounge .project-img-vert {
-  margin: 20px auto 0;
-}
+
 .hotel-materials .caption{
   margin-bottom: 8px;
 }
@@ -816,32 +809,57 @@ text-align: center;
   margin: 0 auto;
 }
 
-.design-brief {
-  margin-top: 60px;
+/***********Other Residential********/
+.other-residential, .hotel-page {
+  box-sizing: border-box;
 }
-.design-brief p {
-  font-size: 1em;
-  margin-top: 20px;
+.other-residential img, .hotel-page img {
+  padding-bottom: 20px;
 }
 
-.design-brief hr {
-  border-top: 2px solid #013664; /*navy blue */
+@media screen and (min-width: 992px) {
+  .other-residential img, .hotel-page img  {
+    padding: 0 10px 20px 0;
+    margin: 0 auto;
+  }
+  .other-residential .right, .hotel-page .right {
+    padding: 0 0 20px 10px;
+  }
 }
-.design-brief h3 {
-  text-align: left;
+/***********Photography***************/
+#profile-grid {
+  overflow: auto;
+  white-space: normal;
+}
+#profile-grid .profile {
+  padding-bottom: 20px;
+}
+#profile-grid .panel {
+  padding: 0
+}
+#profile-grid .panel-body {
+  padding: 15px
+}
+#profile-grid .profile-name {
   font-weight: bold;
 }
+#profile-grid .thumbnail {
+  margin-bottom: 6px;
+}
+#profile-grid .panel-thumbnail {
+  overflow: hidden;
+}
 
-.design-brief th {
-  padding-right: 30px;
+.modal-body {
+  padding: 0;
 }
-table tr:nth-last-of-type(2) {
-  border-bottom: 1px solid #000;
+.panel {
+  border-radius: 0;
+  margin-bottom: 0;
 }
-td {
-  vertical-align: top;
-  padding-top: 20px;
-}
+
+
+
 
 
 
@@ -850,11 +868,9 @@ TOP-NAV
 *********/
 
 .top-nav {
-  /*margin-left: 485px;*/
   padding-top: 23px;
   height: 63px;
-  /*width: 485px;*/
-  width: 90%;
+  width: 90px;
   top: 0;
   font-size: 0.777em;
 
@@ -864,10 +880,7 @@ TOP-NAV
   margin: 0;
   position: fixed;
   list-style-type: none;
-  /*width: 485px;*/
-  /*width: 90%;*/
   z-index: 10;
-  right: 20px;
 
 }
 .project-page:after {
@@ -882,11 +895,12 @@ TOP-NAV
 }
 .top-nav li, .top-nav li a {
   display: inline-block;
-  /*float: left;*/
 }
-.top-nav ul li:nth-of-type(n+2) {
-  float: right !important;
-  margin-left: 20px;
+.top-nav ul li {
+  padding: 0 5px 0 0;
+}
+.top-nav ul li:last-of-type {
+  padding: 0 0 0 5px;
 }
 
 /***********
@@ -1001,7 +1015,8 @@ HEXAGON GRID
 /* This animation completely removes the images from the grid*/
 
 .hide-hex {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 /***********
 MEDIA QUERIES
@@ -1022,8 +1037,6 @@ MEDIA QUERIES
 
     .top-nav ul{
     padding: 0;
-    margin-left: 410px;
-    width: 410px;
     }
 
     .logo {
@@ -1050,6 +1063,9 @@ MEDIA QUERIES
     }
     footer .container .row {
       margin: 0;
+    }
+    .info li {
+      padding: 0;
     }
 
 }
@@ -1085,9 +1101,7 @@ MEDIA QUERIES
   .pp-logo {
     left: 30px;
   }
-  .top-nav ul {
-    right:auto;
-  }
+
   .materials-row h3{
     text-align: center;
   }
@@ -1101,8 +1115,8 @@ MEDIA QUERIES
   .hotel-bubble {
     text-align: left;
   }
-  .lounge .project-img-vert {
-    margin: 20px 0 0 auto;
+  .project-img-vert {
+    margin: 20px auto 0;
   }
 
   .cruise-sketches img, .selkirk-photos img {
@@ -1155,10 +1169,7 @@ MEDIA QUERIES
       padding:0;
       width: 970px;
     }
-    .top-nav ul {
-    margin-left: 485px;
-    width: 485px;
-  }
+
   .cruise-sketches img, .selkirk-photos img {
     max-width: 100%;
   }
