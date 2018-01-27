@@ -8,7 +8,7 @@ body {
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
   margin: 0;
-    /*margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */*/
+    /*margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 body, html {
   height: 100%;
@@ -20,7 +20,6 @@ body, html {
   top: 0;
   width: 100%;
   height: 100%;
-  /* background: url("../img/logo.png") center no-repeat; */
   background:  #fff;
 }
 
@@ -338,7 +337,7 @@ footer ul li  {
   display: inline-block;
   width: 150px;
 }
-.info li{
+.info li {
   display: block;
   text-align: right;
   padding: 3px 0;
@@ -349,7 +348,7 @@ footer ul li  {
 PROJECT PAGES
 *************/
 .project-page {
-  padding:60px 0;
+  padding: 60px 0;
 }
 .project-page h2 {
   margin: 0;
@@ -358,7 +357,7 @@ PROJECT PAGES
   text-transform: uppercase;
 }
 
-.row-left h3{
+.row-left h3 {
   text-align: left;
 }
 .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-xs-6 {
@@ -372,7 +371,7 @@ PROJECT PAGES
 }
 .project-page p {
   font-size: 1.333em;
-  color: #ababab; /*light grey*/
+  color: #ababab;
   font-weight: lighter;
   line-height: 1.4;
 }
@@ -449,8 +448,8 @@ PROJECT PAGES
   height: auto;
   display: inline-block;
   border: 1px solid #000;
-
 }
+
 .tiny + .tiny{
   margin-left: 15px;
 }
@@ -591,17 +590,14 @@ text-align: center;
   left: 50%;
   z-index: 10;
 }
-
+/**********Artwork*************/
 .art {
   margin-top: 0;
   margin-bottom: 30px;
   width: 95%;
 }
-.art-page h3 {
-  text-align: left;
-}
 
-/**********Furniture Design*************/
+/*********Design Build*************/
 
 .furniture-technical {
   height: auto;
@@ -625,12 +621,17 @@ text-align: center;
   float: right;
 
 }
-.furniture-pics img{
+.furniture-pics img {
   width: 285px;
   height: auto;
   margin: 60px auto;
 }
 
+.small-light {
+  width: 230px;
+  height: auto;
+  margin: 0 auto;
+}
 /*********Selkirk and 59th **********/
 .ceiling {
   width: 430px;
@@ -643,9 +644,7 @@ text-align: center;
   width:588px;
   margin: 0 auto;
 }
-.selkirk-photos img{
 
-}
 .selkirk-img1 {
   width: 476px;
   height: auto;
@@ -733,80 +732,9 @@ text-align: center;
 }
 
 /***********Empire Cruise Ship********/
-.cruise-sketches .caption {
-  font-size: 1em;
- display: inline;
- color: #000;
-}
-.cruise-sketches p + p {
-  margin-left: 9em;
-}
-.emp-indent p{
-  margin-left: 1em;
-}
+
 .img-wide {
   margin: 30px 0;
-}
-.cruise-sketches {
-  padding: 30px 0;
-  font-size: 0.777em;
-}
-.cruise-sketches img{
-  border: 1px solid #000;
-
-}
-.motif {
-  width: 229px;
-  height: auto;
-  margin: 0 9px 0 0;
-}
-.knob {
-  width: 229px;
-  height: auto;
-  margin: 0 9px;
-}
-.empire6 {
-  width: 474px;
-  height: auto;
-  margin: 0 0 0px 9px;
-}
-.tassle {
-  width: 229px;
-  height: auto;
-  margin: 9px 9px 0 0;
-}
-.chandelier {
-  width: 229px;
-  height: auto;
-  margin: 0 9px 0px 0;
-}
-.wall {
-  width: 229px;
-  height: auto;
-  margin: 0 9px 0px 9px;
-}
-
-.empire4 {
-    width: 229px;
-    height: auto;
-    margin: 9px 9px 0px 9px;
-}
-.rec-ceiling {
-  width: 557px;
-  height: auto;
-  margin: 0 9px 0px 0;
-}
-.fountain {
-  width: 395px;
-  height: auto;
-  margin: 0 0 0px 9px;
-}
-
-/***********Lighting Design********/
-.small-light {
-  width: 230px;
-  height: auto;
-  margin: 0 auto;
 }
 
 /***********Other Residential********/
@@ -858,14 +786,7 @@ text-align: center;
   margin-bottom: 0;
 }
 
-
-
-
-
-
-/********
-TOP-NAV
-*********/
+/********TOP-NAV*********/
 
 .top-nav {
   padding-top: 23px;
@@ -1157,7 +1078,7 @@ MEDIA QUERIES
   }
 }
 
-@media (min-width: 1092px){
+@media (min-width: 1092px) {
   .grid {
     padding-top: 110px;
     width: 970px;
@@ -1172,13 +1093,6 @@ MEDIA QUERIES
 
   .cruise-sketches img, .selkirk-photos img {
     max-width: 100%;
-  }
-  .motif {
-    width: 229px;
-    height: auto;
-  }
-  .cruise-sketches p + p {
-    margin-left: 9em;
   }
 
 }
